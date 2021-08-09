@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "minigunbow:install_check"
+    "function": "gat.bow:install_check"
   }
 }

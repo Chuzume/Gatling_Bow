@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:bow"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "gat.bow:item/check_bow_using"
+      }
+    }

@@ -9,7 +9,7 @@
     #declare objective ScoreToHealth
 
 # 大雑把死なない対策
-    execute if entity @s[type=player] if score @s ScoreToHealth matches ..60 run function minigunbow:message/death
+    execute if entity @s[type=player] if score @s ScoreToHealth matches ..60 run function gat.bow:message/death
 
 # MobのHealthよりダメージが高い場合Healthに設定
     scoreboard players operation $Damage ScoreDamageCore < $Health ScoreDamageCore
@@ -29,13 +29,13 @@
         execute if entity @s[type=ender_dragon] if score $Health ScoreDamageCore matches ..0 as @e[type=minecraft:ender_dragon,team=!null,sort=nearest,limit=1] run data merge entity @s {DragonPhase:9}
 
     # ヘルスが1以上ならUUID攻撃
-        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $Health ScoreDamageCore matches 1.. run function minigunbow:uuid_hit_no_kb
+        execute unless entity @s[type=player] unless entity @s[type=ender_dragon] if score $Health ScoreDamageCore matches 1.. run function gat.bow:uuid_hit_no_kb
 
     # プレイヤーなら見た目だけダメージ
         execute if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
 
     # プレイヤーかつヘルス0なら死亡メッセージ
-        execute if entity @s[type=player] if score $Health ScoreDamageCore matches ..0 run function minigunbow:message/death
+        execute if entity @s[type=player] if score $Health ScoreDamageCore matches ..0 run function gat.bow:message/death
 
 # 演出
     function gat.bow_score_damage:core/damage_indicator

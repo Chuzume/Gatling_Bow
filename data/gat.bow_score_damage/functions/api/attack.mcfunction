@@ -25,4 +25,4 @@
 # 引数チェック
     execute unless data storage gat.bow_score_damage: Damage run tellraw @a [{"text":"ERROR >>","color":"red"},{"text":"引数が足りません","color":"white"},{"text":"\nMissing Damage at gat.bow_score_damage:api/attack","color":"white"}]
 # Healthを持つEntityであれば実行
-    execute if data storage gat.bow_score_damage: Damage if entity @s[type=!#minigunbow:unhurtable] run function gat.bow_score_damage:core/attack
+    execute if data storage gat.bow_score_damage: Damage if entity @s[type=!#gat.bow:unhurtable] run function gat.bow_score_damage:core/attack

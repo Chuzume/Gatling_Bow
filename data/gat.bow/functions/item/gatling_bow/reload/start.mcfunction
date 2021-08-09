@@ -9,4 +9,4 @@
     scoreboard players reset @s Revo.Charge
 
 # これが俺のリロードだ
-    execute at @s run function minigunbow:item/techkit_revo_reloader/throw_gun
+    execute at @s run function gat.bow:item/techkit_revo_reloader/throw_gun

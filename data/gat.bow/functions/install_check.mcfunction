@@ -1,2 +1,2 @@
-execute unless data storage chuz:storage Revo.Install run function minigunbow:install
-data modify storage chuz:storage Revo.Install set value 1
+execute unless data storage chuz:storage GatBow.Install run function gat.bow:install
+data modify storage chuz:storage GatBow.Install set value 1

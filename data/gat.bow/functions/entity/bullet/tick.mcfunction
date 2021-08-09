@@ -23,13 +23,13 @@
     scoreboard players remove @s Revo.Range 1
 
 # プレイヤーの衝突判定
-    execute if entity @s[tag=Revo.NoHit,tag=Revo.NoHitUser] positioned ~-0.5 ~0.1 ~-0.5 positioned ~0.3 ~0.0 ~0.3 if entity @e[dx=0,type=!#minigunbow:unhurtable,tag=!Revo.Unhurtable,sort=nearest,limit=1] at @s positioned ~-0.5 ~-0.4 ~-0.5 positioned ~-0.3 ~-0.3 ~-0.3 if entity @e[dx=0,type=!#minigunbow:unhurtable,tag=!Revo.Unhurtable,sort=nearest,limit=1] at @s run function minigunbow:entity/bullet/hit
+    execute if entity @s[tag=Revo.NoHit,tag=Revo.NoHitUser] positioned ~-0.5 ~0.1 ~-0.5 positioned ~0.3 ~0.0 ~0.3 if entity @e[dx=0,type=!#gat.bow:unhurtable,tag=!Revo.Unhurtable,sort=nearest,limit=1] at @s positioned ~-0.5 ~-0.4 ~-0.5 positioned ~-0.3 ~-0.3 ~-0.3 if entity @e[dx=0,type=!#gat.bow:unhurtable,tag=!Revo.Unhurtable,sort=nearest,limit=1] at @s run function gat.bow:entity/bullet/hit
 
 # 壁の衝突判定
-    execute unless block ~ ~ ~ #minigunbow:no_collision run function minigunbow:entity/bullet/break
+    execute unless block ~ ~ ~ #gat.bow:no_collision run function gat.bow:entity/bullet/break
     
 # 再帰
-    execute if entity @s[scores={Revo.Recursion=1..,Revo.Range=1..}] at @s run function minigunbow:entity/bullet/tick
+    execute if entity @s[scores={Revo.Recursion=1..,Revo.Range=1..}] at @s run function gat.bow:entity/bullet/tick
 
 # キル
     execute if entity @s[scores={Revo.Range=0}] run kill @s
