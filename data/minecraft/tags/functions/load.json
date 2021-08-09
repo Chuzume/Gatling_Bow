@@ -1,0 +1,5 @@
+{
+  "values": [
+    "gat.bow:load","gat.bow_score_damage:core/init","score_to_health:load","gat.bow_forward_spreader:core/load"
+  ]
+}

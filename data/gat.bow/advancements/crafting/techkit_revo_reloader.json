@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minigunbow:techkit_revo_reloader"
+      }
+    }
+  },
+  "rewards": {
+    "function": "minigunbow:craft/techkit_revo_reloader"
+  }
+}
