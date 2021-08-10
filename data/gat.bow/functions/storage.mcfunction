@@ -12,8 +12,8 @@
 
 # 武器
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:Gatling_Bow} run function gat.bow:item/gatling_bow/main
-    #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revo_Reloader_Reload} run function gat.bow:item/techkit_revo_reloader/reload/reloading
-    #execute unless data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_Revo_Reloader_Reload} run scoreboard players reset @s Revo.Reload
+    #execute if data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_gatbow_Reloader_Reload} run function gat.bow:item/techkit_gatbow_reloader/reload/reloading
+    #execute unless data storage chuz:context Item.Mainhand.tag.ChuzData{ItemID:TechKit_gatbow_Reloader_Reload} run scoreboard players reset @s Revo.Reload
 
 # オフハンドに持てないアイテムが入ったら戻す
     execute if data storage chuz:context Item.Offhand.tag.ChuzData{NoOffhand:1b} run function gat.bow:item/no_offhand

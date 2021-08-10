@@ -7,3 +7,7 @@
 
 # Replace処理
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData.Ammo in overworld run function gat.bow:item/replaceitem
+
+# 本物の矢は消しちゃう
+    execute if score @s GatBow.Shot matches 0.. run kill @e[type=arrow,tag=!GatBow.Projectile,limit=1,sort=nearest]
+    execute if score @s GatBow.Shot matches 0.. run playsound minecraft:item.armor.equip_gold player @a ~ ~ ~ 2 1

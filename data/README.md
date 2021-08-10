@@ -1,5 +1,5 @@
-# TechKit_Revo_Reloader
-*『どういう原理かは、深く考えないほうがいいナ』*
+# Gatling Bow
+*『あっさりめの連射力』*
 
 ## 詳しくはブログで
-https://chuzume.hatenablog.jp/entry/revo_reloader
+https://chuzume.hatenablog.jp/entry/gatling_bow
