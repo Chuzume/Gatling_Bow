@@ -10,8 +10,7 @@
 
 # 弾を召喚
     execute anchored eyes run summon arrow ^ ^-0.15 ^ {PierceLevel:1b,crit:1b,pickup:1b,Tags:["GatBow.Projectile","GatBow.ArrowInit"],Owner:{},Rotation:[0F,0F]}
-# 拡散
-    function gat.bow:item/gatling_bow/shot/spread
+
 # 弾丸にInit処理
     execute as @e[type=arrow,tag=GatBow.ArrowInit,limit=1] at @s run function gat.bow:entity/bullet/init
 
