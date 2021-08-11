@@ -31,3 +31,6 @@
     scoreboard objectives add Chuz.F.Check_X dummy
     scoreboard objectives add Chuz.F.Check_Y dummy
     scoreboard objectives add Chuz.F.Check_Z dummy
+
+# やぶちのクラフター用レシピ
+    data modify storage yv:custom_crafter Import append value {Pattern:[{Count:1b,Slot:2b,id:"minecraft:dispenser"},{Count:1b,Slot:3b,id:"minecraft:chain"},{Count:1b,Slot:10b,id:"minecraft:dispenser"},{Count:1b,Slot:11b,id:"minecraft:repeater"},{Count:1b,Slot:12b,id:"minecraft:chain"},{Count:1b,Slot:20b,id:"minecraft:dispenser"},{Count:1b,Slot:21b,id:"minecraft:chain"}],Result:{Count:1b,Slot:15b,id:"minecraft:bow",tag:{ChuzData:{Ammo:0,AmmoUse:1,CoolTime:0,ItemID:"Gatling_Bow",MaxAmmo:2147483647,MaxCoolTime:1,NoOffhand:1b,RawName:'{"text":"Gatling Bow","color":"gold","italic":false}'},Damage:0,Unbreakable:1b,display:{Lore:['{"text":" "}','{"text":"[Hold RClick:FIRE!]","color":"white","italic":false}','{"text":" "}','{"text":"\\"圧倒的連射力！\\"","color":"gray","italic":false}'],Name:'{"text":"Gatling Bow","color":"gold","italic":false}'}}}}
